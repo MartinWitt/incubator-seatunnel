@@ -391,7 +391,7 @@ public class SFTPFileSystem extends FileSystem {
                 fileStats.add(getFileStatus(client, entry, absolute));
             }
         }
-        return fileStats.toArray(new FileStatus[fileStats.size()]);
+        return fileStats.toArray(new FileStatus[0]);
     }
 
     private boolean rename(ChannelSftp channel, Path src, Path dst)
